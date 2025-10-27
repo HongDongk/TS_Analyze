@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // 컴파일 되는 JS버전 설정
+    "module": "esnext", // 컴파일 되는 모듈 시스템 설정 (CommonJS 혹은 ES Module)
+    "outDir": "dist", // 컴파일 되는 JS파일의 위치를 'dist'폴더로 설정
+    "strict": false, // 타입 검사 엄격함 수준을 정함
+    "moduleDetection": "force", // 자동으로 모든 타입스크립트 파일이 로컬 모듈(독립 모듈)로 취급
+    "skipLibCheck": true // 타입 정의 파일의 타입 검사를 생략하는 옵션
+  },
+  "ts-node": {
+    "esm": true // ts-node가 es-module을 이해할 수 있도록 함
+  },
+  "include": ["src"] // src경로에 있는 모든 파일을 컴파일
+}
